@@ -1,5 +1,11 @@
 function findFirstDuplicate(arr) {
   // type your code here
+  for (let i = 0; i < arr.length; i++) {
+    if ( arr[i] === arr[i + 1]) {
+      return arr[i];
+    }
+  }
+  return -1
 }
 
 if (require.main === module) {
@@ -17,3 +23,6 @@ module.exports = findFirstDuplicate;
 
 // Please add your pseudocode to this file
 // And a written explanation of your solution
+    //loop over the arr 
+      //compare the first index num with the next if there the same we return that num
+      // otherwise return -1 
